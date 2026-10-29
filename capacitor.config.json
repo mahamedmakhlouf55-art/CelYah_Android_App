@@ -1,0 +1,17 @@
+{
+  "appId": "com.celyah.robot",
+  "appName": "Celyah",
+  "webDir": "dist",
+  "backgroundColor": "#07040f",
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css"
+    }
+  }
+}
