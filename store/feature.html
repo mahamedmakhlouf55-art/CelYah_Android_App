@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../src/styles.css">
+<style>body{margin:0;background:#07040f}#fg{position:relative;width:1024px;height:500px;overflow:hidden;background:radial-gradient(70% 120% at 78% 40%,rgba(130,60,230,.55),transparent 65%),#07040f;display:flex;align-items:center}
+.t{padding:0 56px;flex:1}.t h1{font-size:92px;margin:0;font-weight:700;letter-spacing:-3px;line-height:1;text-shadow:0 0 40px rgba(180,110,255,.7)}.t h1 span{color:#ff7bd8}
+.t p{font-size:30px;color:#cdbbf0;margin:12px 0 0}.t .chips{display:flex;gap:10px;margin-top:26px}.t .chips i{font-style:normal;background:rgba(40,22,80,.8);border:1px solid rgba(170,110,255,.4);border-radius:99px;padding:8px 18px;font-size:20px}
+.r{width:430px;margin-inline-end:20px}</style></head><body>
+<div id="fg"><div class="t"><h1>Celyah <span>♥</span></h1><p>Your Smart Companion</p><div class="chips"><i>Chat · Gemini AI</i><i>Live camera</i><i>Control anywhere</i></div></div><div class="r" id="r"></div></div>
+<script type="module">
+import { heroHTML } from '../src/robot-art.js'; import { RobotFace, startFace } from '../src/face.js';
+document.getElementById('r').innerHTML = heroHTML({ full: true });
+const f = new RobotFace(document.querySelector('.hero-face'), { viewY: 30, viewH: 154 }); f.setName('love'); startFace(f); window.__ready = true;
+</script></body></html>
